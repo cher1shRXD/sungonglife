@@ -1,0 +1,70 @@
+
+#wrapper {
+    width: 120rem;
+}
+th {
+    font-size: 2.5rem;
+}
+td, td > a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+tbody > tr > th {
+    width: 12rem;
+}
+.chk {
+    background-color: lawngreen;
+}
+.prob_title {
+    width: 40%;
+}
+.prob_writer {
+    width: 10rem;
+}
+@media screen and (max-width: 1430px) {
+    #wrapper {
+        width: 90%;
+        min-width: 60rem;
+    }
+    th {
+        font-size: 1.7rem;
+    }
+    td, td > a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+    tbody > tr > th {
+        width: 8rem;
+    }
+}
+@media screen and (max-width: 730px) {
+    .main > h1 {
+        font-size: 3rem;
+    }
+    #wrapper {
+        width: 90%;
+        min-width: 30rem;
+    }
+    th {
+        font-size: 1.2rem;
+    }
+    .prob_title {
+        width: 10rem;
+    }
+    td, td > a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: horizontal;
+    }
+    tbody > tr > th {
+        width: 3rem;
+    }
+}

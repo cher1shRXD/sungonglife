@@ -1,0 +1,220 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* css시작 */
+body,html {
+    margin: 0;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+#canvas {
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    opacity: 1;
+    animation-name: fade_out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13rem;
+    flex-direction: column;
+    align-items: center;
+}
+.main > h1 {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+#mobile_menu {
+    display: none;
+}
+#tost_message {
+    opacity: 0;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 2rem 10rem;
+    background: rgba(0, 0, 0, 0.70);
+    border-radius: 100px;
+    color: #fff;
+    box-shadow: 3px 4px 11px 0px #00000040;
+    transition: all 0.5s;
+    z-index: 99999;
+    font-size: 2rem;
+}
+/*토스트 메시지 활성화 되었을 때*/
+#tost_message.active {
+    opacity: 100%;
+    top: 50px;
+}
+@keyframes fade_out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.1;
+        z-index: 999;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -99;
+    }
+}
+@media screen and (max-width: 1840px) {
+    #main {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1560px) {
+    #main {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1430px) {
+    #main {
+        justify-content: center;
+        margin-top: 18rem;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #tost_message {
+        font-size: 1.5rem;
+        padding: 20px 70px;
+    }
+}
+@media screen and (max-width: 730px) {
+    #main {
+        margin-top: 7rem;
+    }
+    #mobile_menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu_area {
+        width: 20rem;
+        height: 100vh;
+        background-color: white;
+        border-right: 0.1rem gray solid;
+        border-top: 0.1rem gray solid;
+    }
+    #menu_close {
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #menu_close img {
+        height: 75%;
+    }
+    #shadow {
+        width: calc(100% - 20rem);
+        height: 100vh;
+        background-color: black;
+        opacity: 0.7;
+    }
+    #menu_login_status {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #menu_login_status button {
+        font-size: 2rem;
+        font-family: 'Gamja Flower', sans-serif;
+    }
+    #menu_profile {
+        width: 100%;
+        height: fit-content;
+        min-height: 20rem;
+        padding-left: 1rem;
+    }
+    #menu_profile h2 {
+        font-size: 2.5rem;
+        font-family: "Black Han Sans", sans-serif;
+    }
+    #menu_profile p {
+        font-size: 2.5rem;
+        font-family: 'Gaegu', sans-serif;
+    }
+    #menu_profile ul {
+        list-style: none;
+        padding: 0;
+    }
+    #menu_profile ul li button {
+        font-size: 3rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+    #menu_bar {
+        width: 100%;
+        height: 20rem;
+    }
+    #menu_bar ul {
+        list-style: none;
+        padding: 0;
+    }
+    #menu_bar ul:first-child {
+        border-top: 0.1rem black solid;
+    }
+    #menu_bar ul li {
+        width: 100%;
+        height: 5rem;
+        border-bottom: 0.1rem black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    #menu_bar ul p {
+        margin: 0;
+        font-size: 2rem;
+        display: inline;
+        cursor: pointer;
+    }
+    .dropdown {
+        margin-left: 1rem;
+    }
+    .dropdown-item {
+        font-size: 3rem;
+    }
+    #tost_message {
+        font-size: 1rem;
+        padding: 1.3rem 2rem;
+    }
+}
+
+
+
