@@ -1,0 +1,425 @@
+#main {
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#phrase {
+    width: 100%;
+    height: 35%;
+}
+#phrase > p {
+    font-size: 4rem;
+    font-family: "Black Han Sans", sans-serif;
+    color: darkgrey;
+}
+#phrase > p > i {
+    color: #0D6EFD;
+    font-size: 5rem;
+}
+#h1 {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#h1 > h1 {
+    font-size: 4rem;
+    font-family: "Black Han Sans", sans-serif;
+}
+#home_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    overflow-x: scroll; !important;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+#home_menu::-webkit-scrollbar {
+    display: none;
+}
+
+#shortcut {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icons {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.sub_icon {
+    width: calc(100% / 6);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.sub_icon:hover {
+    width: calc(100% /5.7);
+    height: 100%;
+    cursor: pointer;
+}
+.sub_icon > img {
+    width: 100%;
+    height: 70%;
+}
+.sub_icon > label {
+    font-size: 2rem;
+    font-family: "Black Han Sans", sans-serif;
+}
+#contact {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#contact > * {
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+a > img {
+    width: 3rem;
+}
+.wrap_prob {
+    width: min-content;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+/* 메인콘텐츠 */
+.prob_box {
+    width: 27rem;
+    height: 40rem;
+    border: 0.1rem solid rgb(182, 182, 182);
+    border-radius: 2rem 2rem 2rem 2rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.prob_box > h1 {
+    font-size: 5rem;
+    font-family: "Black Han Sans", sans-serif;
+}
+.prob_box:hover {
+    background-color: #cadefc;
+}
+.prob_box > img {
+    height: 60%;
+    margin-bottom: 1rem;
+}
+.main_prob {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 0.1rem gray solid;
+    display: flex;
+    align-items: center;
+}
+.main_prob:last-child {
+    border: none;
+}
+.prob_title {
+    font-size: 3rem;
+    width: 65%;
+    cursor: pointer;
+}
+.prob_writer {
+    font-size: 2rem;
+    width: 10%;
+}
+.prob_subject  {
+    font-size: 2rem;
+    width: 20%;
+}
+/* 프로필 */
+#profile {
+    width: 45rem;
+    height: 40rem;
+    border: 0.1rem solid rgb(182, 182, 182);
+    box-shadow: 1rem 1rem 1rem -0.5rem rgb(170, 170, 170);
+    border-radius: 2rem 2rem 2rem 2rem;
+    background-color: white;
+    scroll-snap-align: start;
+}
+#user_info {
+    width: 100%;
+    height: 15rem;
+    /* border-bottom: 0.1rem solid rgb(182, 182, 182); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#user_info img {
+    width: 13rem;
+}
+#info_box {
+    width: 25rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#info_box h2 {
+    font-size: 4rem;
+    font-family: "Black Han Sans", sans-serif;
+}
+#info_box p {
+    font-size: 2.5rem;
+    font-family: 'Gaegu', sans-serif;
+}
+#stat {
+    width: 100%;
+    height: calc(100% - 15rem);
+}
+#stat ul {
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+#stat ul li p {
+    font-size: 3rem;
+    font-family: "Black Han Sans", sans-serif;
+    margin-left: 2rem;
+}
+#stat ul li button {
+    font-size: 4rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+}
+#stat ul li h3 {
+    font-size: 2rem;
+    font-family: "Black Han Sans", sans-serif;
+}
+#stat p {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gaegu', sans-serif;
+}
+@media screen and (max-width: 1840px) {
+    #main {
+        justify-content: center;
+    }
+    #profile {
+        margin-left: 2rem;
+    }
+    #mn_probs {
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width: 1560px) {
+    #main {
+        justify-content: center;
+    }
+
+
+}
+@media screen and (max-width: 1430px) {
+    #main {
+        justify-content: center;
+        margin-top: 18rem;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #shortcut {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #contact {
+        display: none;
+    }
+    #contact > * {
+        font-size: 1.5rem;
+    }
+    #h1 {
+        justify-content: flex-start;
+    }
+    #icons {
+        width: 100%;
+        height: 20rem;
+        align-items: center;
+    }
+    #home_menu {
+        width: calc(100% - 3rem);
+        margin: 0 1.5rem;
+    }
+    .prob_box {
+        width: 27rem;
+        height: 40rem;
+        min-height: 40rem;
+        min-width: 27rem;
+    }
+    .prob_box:first-child {
+        margin-right: 1.5rem;
+    }
+    #profile {
+        margin-left: 0;
+        margin-right: 2rem;
+
+    }
+    #tost_message {
+        font-size: 1.5rem;
+        padding: 20px 70px;
+    }
+
+}
+@media screen and (max-width: 730px) {
+    #main {
+        margin-top: 7rem;
+    }
+    #phrase > p{
+        padding: 0 1rem;
+    }
+    #h1 {
+        padding-left: 2rem;
+    }
+    #h1 > h1 {
+        word-break: break-word;
+    }
+    #contact {
+        display: none;
+    }
+    #home_menu {
+        overflow-x: scroll;
+        white-space:nowrap;
+        width: 100%;
+        margin: 0;
+    }
+    .wrap_prob {
+        width: 100vw;
+        margin: 0;
+    }
+    .prob_box {
+        width: 90vw;
+        height: 40rem;
+        min-height: 40rem;
+        min-width: 90vw;
+        margin: 0 1.5rem;
+    }
+    #profile {
+        display: none;
+    }
+    #mobile_menu {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu_area {
+        width: 20rem;
+        height: 100vh;
+        background-color: white;
+        border-right: 0.1rem gray solid;
+        border-top: 0.1rem gray solid;
+    }
+    #menu_close {
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #menu_close img {
+        height: 75%;
+    }
+    #shadow {
+        width: calc(100% - 20rem);
+        height: 100vh;
+        background-color: black;
+        opacity: 0.7;
+    }
+    #menu_login_status {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #menu_login_status button {
+        font-size: 2rem;
+        font-family: "Black Han Sans", sans-serif;
+    }
+    #menu_profile {
+        width: 100%;
+        height: fit-content;
+        min-height: 20rem;
+        padding-left: 1rem;
+    }
+    #menu_profile h2 {
+        font-size: 2.5rem;
+        font-family: "Black Han Sans", sans-serif;
+    }
+    #menu_profile p {
+        font-size: 2.5rem;
+        font-family: 'Gaegu', sans-serif;
+    }
+    #menu_profile ul {
+        list-style: none;
+        padding: 0;
+    }
+    #menu_profile ul li button {
+        font-size: 3rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+    #menu_bar {
+        width: 100%;
+        height: 20rem;
+    }
+    #menu_bar ul {
+        list-style: none;
+        padding: 0;
+    }
+    #menu_bar ul:first-child {
+        border-top: 0.1rem black solid;
+    }
+    #menu_bar ul li {
+        width: 100%;
+        height: 5rem;
+        border-bottom: 0.1rem black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    #menu_bar ul p {
+        margin: 0;
+        font-size: 2rem;
+        display: inline;
+        cursor: pointer;
+    }
+    #tost_message {
+        font-size: 1rem;
+        padding: 1.3rem 2rem;
+    }
+}
+
+
+
